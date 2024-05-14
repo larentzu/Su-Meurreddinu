@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <!-- head e body sono i due marcatori che dipendono da html -->
+  <head>
+    <title>Su Meurreddinu</title>
+    <!-- charset è per settare unicode -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Sito dedicato Vitale Murgia" />
+    <meta name="keywords" content="manoscritto, Sardegna, strumenti di navigazione" />
+    <meta name="author" content="Lorenzo Zucca" />
+    <!-- viewport è per la visualizzazione su device diversi -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stile/stile.css" />
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.Title" content="Su Meureddinu">
+    <meta name="DC.Creator" content="Zucca, Lorenzo">
+    <meta name="DC.Subject" content="Manoscritto">
+    <meta name="DC.Subject" content="Periodi">
+    <meta name="DC.Description" content="Raccolta di manoscritti di Vitale Murgia">
+    <meta name="DC.Publisher" content="Università di Bologna">
+    <meta name="DC.Date" content="2024">
+    <meta name="DC.Type" content="Text">
+    <meta name="DC.Format" content="HTML">
+    <meta name="DC.Identifier" content="tbd">
+    <meta name="DC.Source" content="Sito web già esistente da replicare">
+    <meta name="DC.Language" content="ita">
+    <meta name="DC.Coverage" content="Bologna">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- abbiamo sette diverse div -->
+    <header>
+      <div id="top" class="lingua">
+        <a href="#">ENG</a>
+        <a href="index-srd.html">SRD</a>
+        <a href="#" class="corrent">ITA</a>
+      </div>
+      <div class="header">
+        <img src="img/firma.png" alt="Frontespizio del manoscritto" />
+      </div>
+    </header>
+    <nav>
+      <div id="navbar">
+        <a href="index.html"><b>Home</b></a>
+        <a href="intro.html">Introduzione</a>
+        <a href="#" class="corrente"><b>Catalogo</b></a>
+        <a href="#">Persone</a>
+        <a href="maps.html">Luoghi</a>
+      </div>
+    </nav>
+    <!-- two columns grid -->
+    <div class="row">
+      <!-- left column -->
+      <div class="leftcolumn">
+        <!-- breadcrumbs -->
+        <div>
+          <ul class="breadcrumb">
+            <li><a href="index.html" title="Vai alla home">Home</a></li>
+            <li><a href="catalogo.html" title="Vai al catalogo">Catalogo</a></li>
+            <li>Vita morte e miracoli - Ignazio da Laconi</li>
+          </ul>
+        </div>
+        <!-- scopri di più sull'opera -->
+        <div>
+          <h4>Copertina</h4>
+          <div>
+            <img src="img/ignazio/ignaziu-zero.jpg" class="img-item" alt="Paris"/>
+          </div>
+        </div>
+      </div>
+      <!-- right column -->
+      <div class="rightcolumn">
+        <h2>Vita morte e miracoli - Ignazio da Laconi</h2>
+        <div class="border-section">
+          <!-- img -->
+          
+          <!-- metadati -->
+          <div class="bg-gray metadata pd-12">
+            <h3>Metadati</h3>
+            <p>Scarica il <a href="xml/xml-valido-dc.xml" style="color:tomato"><b>file XML/DC</b></a></p>
+            <p><span class="dc.title">Titolo:</span> Vita morte e miracoli - Ignazio da Laconi</p>
+            <p><span class="dc.creator">Creatore:</span> Vitale Murgia</p>
+            <p><span class="dc.date">Data di creazione:</span> 1954</p>
+            <p><span class="dc.format">Tecnica:</span> olio su tela</p>
+            <p><span class="dc.extent">Dimensioni:</span> 197×127,5 cm</p>
+            <p><span class="dc.provenance">Ubicazione:</span> Cleveland Museum of Art, Cleveland</p>
+          </div>
+          <!-- metadati -->
+          <div class="bg-gray metadata pd-12">
+            <h3 class="dc.description">Descrizione</h3>
+            La coppia abbracciata che occupa la sinistra del quadro rappresenta
+            uno dei temi ricorrenti della pittura di Picasso: è un soggetto
+            ripreso in diverse opere in cui gli amanti si stringono in una
+            profonda confidenza. A questo gruppo, che sembrerebbe simbolizzare
+            l’amore carnale, è contrapposta sulla destra del quadro la donna
+            coperta da un mantello e con in braccio un bambino. Ispirata a
+            immagini sacre e dipinta a grandi linee rispetto agli altri elementi
+            del quadro, la donna coperta personifica la maternità.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <p>
+        <a href="#" title="Credits">Credits</a> |
+        <a href="#" title="Licenze">Licenze</a>
+      </p>
+    </div>
+    <div class="copyright">
+      <p>
+        © Copyright (c) 2021 by /DH.arc - Digital Humanities Advanced Research
+        Centre.
+      </p>
+    </div>
+    <!-- script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

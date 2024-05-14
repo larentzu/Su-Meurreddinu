@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Vita morte e miracoli - Ignazio da Laconi</title>
+				<respStmt>
+					<resp>autore</resp>
+					<name>Murgia, Vitale</name>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<p>Questa risorsa digitale è liberamente accessibile per uso personale o scientifico. Ogni uso commerciale è vietato</p>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>
+					<title>Su Meurreddinu</title>
+					<author>Murgia, Vitale</author>
+					<date>1955</date>
+				</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div type="ottava">
+				<l><persName>Ignaziu</persName> 
+				santu de s’
+				<place>Isula</place> 
+				mia</l>
+				<l>permitti s’azzardu chi bolu tentai.</l>
+				<l>Po custa sconnessa sarda poesia</l>
+				<l>s’aggiùdu ch’invocu non m’as a negai,</l>
+				<l>mancad su coraggiu, tengu timoria</l>
+				<l>de non pod’assolvi cantu depi fai.</l>
+				<l>Si don’e cultura bastanti tenia</l>
+				<l>in versus ti bolia de prus esaltai.</l>
+			</div>
+		</body>
+	</text>
+</TEI>

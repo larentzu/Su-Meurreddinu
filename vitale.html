@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<!-- head e body sono i due marcatori che dipendono da html -->
+	<head>
+		<title>Su Meurreddinu</title>
+		<!-- charset è per settare unicode -->
+		<meta charset="UTF-8" />
+		<meta name="description" content="Sito dedicato Vitale Murgia" />
+		<meta name="keywords" content="manoscritto, Sardegna, strumenti di navigazione" />
+		<meta name="author" content="Lorenzo Zucca" />
+		<!-- viewport è per la visualizzazione su device diversi -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="stile/stile.css" />
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+		<meta name="DC.Title" content="Su Meureddinu">
+		<meta name="DC.Creator" content="Zucca, Lorenzo">
+		<meta name="DC.Subject" content="Manoscritto">
+		<meta name="DC.Subject" content="Periodi">
+		<meta name="DC.Description" content="Raccolta di manoscritti di Vitale Murgia">
+		<meta name="DC.Publisher" content="Università di Bologna">
+		<meta name="DC.Date" content="2024">
+		<meta name="DC.Type" content="Text">
+		<meta name="DC.Format" content="HTML">
+		<meta name="DC.Identifier" content="tbd">
+		<meta name="DC.Source" content="Sito web già esistente da replicare">
+		<meta name="DC.Language" content="ita">
+		<meta name="DC.Coverage" content="Bologna">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- abbiamo sette diverse div -->
+		<header>
+			<div id="top" class="lingua">
+				<a href="#">ENG</a>
+				<a href="index-srd.html">SRD</a>
+				<a href="#" class="corrent">ITA</a>
+			</div>
+			<div class="header">
+				<img src="img/firma.png" alt="Frontespizio del manoscritto" />
+			</div>
+		</header>
+		<nav>
+			<div id="navbar">
+				<a href="index.html">Home</a>
+				<a href="intro.html">Introduzione</a>
+				<a href="catalogo.html">Catalogo</a>
+				<a href="#" class="corrente"><strong>Persone</strong></a>
+				<a href="maps.html">Luoghi</a>
+			</div>
+		</nav>
+		<div class="row">
+			<!-- left column -->
+			<div class="leftcolumn">
+				<!-- breadcrumbs -->
+				<div>
+					<ul class="breadcrumb">
+						<li><a href="index.html" title="Vai alla home">Home</a></li>
+						<li><a href="#">Persone</a></li>
+						<li>Vitale Murgia</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Correlati:</h3>
+					<a href="#" title="Francesco Farci"><div class="card">
+						<div class="img farci"></div>
+						<div class="container">
+					    	<h4><b>Francesco Farci</b></h4>
+					    	<p>poeta improvvisatore</p>
+				  		</div>
+					</div></a>
+				</div>
+			</div>
+			<!-- right column -->
+			<div class="rightcolumn">
+				<h2>Vitale Murgia</h2>
+	        	<div class="row">
+	        		<div class="equalcolumn">
+	        			<p><b><span>Cognome e nome:</span></b> Murgia, Vitale</p>
+						<p><b><span>Sesso:</span></b> M</p>
+						<p><b><span>Nazionalità:</span></b> italiana</p>
+						<p><b><span>Data di nascita:</span></b> 1° giugno 1885</p>
+						<p><b><span>Luogo di nascita:</span></b> Sicci San Biagio <strong><sup><a href="https://www.geonames.org/2523120/" target="_blank" title="Identificativo GeoNames di Sicci San Biagio, Italia">GeoNames</a></sup></strong></p>
+						<p><b><span>Data di morte:</span></b> 18 marzo 1963</p>
+						<p><b><span>Luogo di morte:</span></b> Iglesias <strong><sup><a href="https://www.geonames.org/6539584/" target="_blank" title="Identificativo GeoNames di Iglesias, Italia">GeoNames</a></sup></strong></p>
+						<p><b><span>Attività:</span></b> poeta, finanziere</p>
+						<hr>
+						<h4>Controllo di autorità</h4>
+						<p><b>SBN:</b> <a href="https://opac.sbn.it/risultati-autori/-/opac-autori/detail/ITICCUCAGV432530" target="_blank" title="Identificativo SBN di Murgia, Vitale">IT\ICCU\CAGV\432530</a>
+					</div>
+					<div class="equalcolumn"></div>
+					<div class="equalcolumn">
+						<img src="img/fototessera.jpg" alt="Murgia nel 1955" style="height:250px">
+						<p>Vitale Murgia nel 1955.</p>
+						<a href="#"><button class="button">Scarica il file XML/DC</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+        <section>
+			<div class="pre-footer" align="center"><a href="#"><p>Credits</a> | <a href="#">Licenze</a> | <a href="item.html">Ultimo item inserito</a>
+			</div>
+		</section>
+		<footer class="footer">
+			<a href="#top"><img src="img/freccia.png" title="Torna su" position:center></a>
+			<p align="center">&copy;Lorenzo Zucca 2024 - Corso di Digital humanities e Patrimonio culturale &#128239;</p>
+		</footer>
+		<script src="script/script.js"></script>
+	</body>
+</html>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalogo
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:title>Vita morte e miracoli - Ignazio da Laconi</dc:title>
+<dc:creator>Murgia, Vitale</dc:creator>
+<dc:creator xsi:type="SBN">IT\ICCU\CAGV\432530</dc:creator>
+<dc:subject>Ignatius of Laconi</dc:subject>
+<dc:subject xsi:type="VIAF">89656390</dc:subject>
+<dc:subject>Poesia</dc:subject>
+<dc:description>Agiografia in versi del frate sardo sant’Ignazio da Laconi.</dc:description>
+<dc:date>1954</dc:date>
+<dc:extent>119 stanze</dc:extent>
+<dc:extent>113 pagine</dc:extent>
+<dc:extent>14,5cmx20,5cm</dc:extent>
+<dc:language>sc</dc:language>
+<dc:relation>Su Meurreddinu</dc:relation>
+
+</catalogo>

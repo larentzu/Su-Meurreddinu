@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<!-- head e body sono i due marcatori che dipendono da html -->
+	<head>
+		<title>Su Meurreddinu</title>
+		<!-- charset è per settare unicode -->
+		<meta charset="UTF-8" />
+		<meta name="description" content="Sito dedicato Vitale Murgia" />
+		<meta name="keywords" content="manoscritto, Sardegna, strumenti di navigazione" />
+		<meta name="author" content="Lorenzo Zucca" />
+		<!-- viewport è per la visualizzazione su device diversi -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="stile/stile.css" />
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+		<meta name="DC.Title" content="Su Meureddinu">
+		<meta name="DC.Creator" content="Zucca, Lorenzo">
+		<meta name="DC.Subject" content="Manoscritto">
+		<meta name="DC.Subject" content="Periodi">
+		<meta name="DC.Description" content="Raccolta di manoscritti di Vitale Murgia">
+		<meta name="DC.Publisher" content="Università di Bologna">
+		<meta name="DC.Date" content="2024">
+		<meta name="DC.Type" content="Text">
+		<meta name="DC.Format" content="HTML">
+		<meta name="DC.Identifier" content="tbd">
+		<meta name="DC.Source" content="Sito web già esistente da replicare">
+		<meta name="DC.Language" content="ita">
+		<meta name="DC.Coverage" content="Bologna">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- abbiamo sette diverse div -->
+		<header>
+			<div id="top" class="lingua">
+				<a href="#">ENG</a>
+				<a href="index-srd.html">SRD</a>
+				<a href="#" class="corrent">ITA</a>
+			</div>
+			<div class="header">
+				<img src="img/firma.png" alt="Frontespizio del manoscritto" />
+			</div>
+		</header>
+		<nav>
+			<div id="navbar">
+				<a href="index.html">Home</a>
+				<a href="intro.html">Introduzione</a>
+				<a href="catalogo.html">Catalogo</a>
+				<a href="#">Persone</a>
+				<a href="#" class="corrente"><b>Luoghi</b></a>
+				
+			</div>
+		</nav>
+		<section class="luoghi" style="text-align: center">
+			<h1>Luoghi tra le righe</h1>
+			<p>Nel suo manoscritto e in tante altre sue opere, Vitale Murgia non manca di citare tanti <strong>luoghi della Sardegna</strong>, che inserisce abilmente nelle rime e nelle storie che racconta, per dare un contatto più diretto con la terra che ne ha conosciuto le gesta.</p>
+			<p>In particolare, nella sezione del manoscritto chiamata <strong>"Vita morte e miracoli - Ignazio da Laconi"</strong>, si attraversano tanti paesi, città e conventi che hanno caratterizzato la vita del santo francescano e delle persone che ne hanno chiesto l'intercessione, sia in vita che in morte. Il ricordo di tante località di ieri e di oggi si uniscono in un quadro d'insieme che ci restituisce un'isola tanto più <strong>unita</strong> di quanto si possa pensare.</p>
+		</section>
+		<section class="mappa">
+			<map class="map">
+				<iframe src="https://uploads.knightlab.com/storymapjs/25cb803795efb4452e2224c545c17a97/su-meurreddinu/index.html" frameborder="0" width="90%" height="500"></iframe>
+			</map>
+		</section>
+		<section class="legenda">
+			<hr>
+			<h3 align="center">Legenda</h3>
+			<p><strong>Titolo</strong>: indica la localizzazione al giorno d'oggi.</p>
+			<p>Descrizione: breve caratterizzazione del luogo, correlato anche al testo del manoscritto.</p>
+			<p><i>Citazione</i>: modi con cui il luogo è citato nel manoscritto.</p>
+			<p>Collocazione: riferimento delle stanze in cui il luogo è citato nel manoscritto.</p>
+		</section>
+		<section>
+			<div class="pre-footer" align="center"><a href="#"><p>Credits</a> | <a href="#">Licenze</a> | <a href="item.html">Ultimo item inserito</a>
+			</div>
+		</section>
+		<footer class="footer">
+			<a href="#top"><img src="img/freccia.png" title="Torna su" position:center></a>
+			<p align="center">&copy;Lorenzo Zucca 2024 - Corso di Digital humanities e Patrimonio culturale &#128239;</p>
+		</footer>
+		<script src="script/script.js"></script>
+	</body>
+</html>

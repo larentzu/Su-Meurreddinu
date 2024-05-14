@@ -1,0 +1,777 @@
+body {
+	height:100%;
+  background-color: #FFFCF3;
+}
+
+* {box-sizing: border-box;
+  font-family: "Lato";
+}
+
+.header {
+	background-color: #ffff99;
+}
+
+.progetto {
+	background-color: #FFFCF3;
+	padding: 5% 20% 5% 20%;
+}
+
+.manoscritto {
+  background-color: #409041;
+  padding: 5% 20% 5% 20%;
+  color: #FFFCF3;
+}
+
+.header img{
+	width:40%;
+	height:auto;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+#navbar {
+	background-color:#008080;
+	padding: auto;
+	color:black;
+  overflow: hidden;
+}
+
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.footer {
+  background-color: #409041;
+  padding: auto;
+  color:#FFFCF3;
+  font-family: "Lato";
+  padding:2px;
+}
+
+.intro {
+	padding: 12% 20% 12% 20%;
+	background-color: #7575a3;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner.jpg");
+	height:50%;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: cover;
+  background-attachment: fixed;
+  font-family: "Lato";
+	text-align: center;
+}
+
+.testo-intro {
+  color: white;
+  font-size: 20px;
+}
+
+.progetto, .manoscritto {
+  text-align: center;
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  padding: 10px;
+  text-align: left;
+}
+
+.grid-item img{
+  width:60%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  border: 3px solid #409041;
+  background-color: white;
+  color: #409041;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #409041;
+  color: white;
+}
+
+.esplora {
+	background-color: #FFFCF3;
+	padding:5% 20% 5% 20%;
+}
+
+.footer img{
+	width:2%;
+	height:auto;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+.pre-footer {
+	background-color: #FFFCF3;
+	padding:2px;
+  color:black;
+}
+
+#navbar {
+  background-color: #ffff80;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+#navbar a {
+  float: left;
+  display: block;
+  color: #ff6633;
+  text-align: left;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+#navbar a:hover {
+  background-color: #ff6633;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+#navbar a.corrente {
+  background-color: #cc3300;
+  color: white;
+}
+
+.lingua {
+  background-color: #ffff99;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.lingua a {
+  float: right;
+  display: block;
+  color: #cc3300;
+  text-align: left;
+  padding: 2px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Lato";
+}
+
+/* Change the color of links on hover */
+.lingua a:hover {
+  background-color: #ff6633;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.lingua a.corrent {
+  background-color: #cc3300;
+  color: white;
+}
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 10px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 15px;
+  font-family: "Lato";
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: ">";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: none;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 10px 16px;
+}
+
+.item-container {
+  display: inline-grid;
+  grid-template-columns: 20% auto auto;
+}
+
+.c-item {
+  padding: 20px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #409041;
+}
+
+.luoghi {
+  padding: 2% 20%;
+}
+
+iframe {
+  padding: 1px 40px;
+}
+
+.introduzione {
+  background-color: #FFFCF3;
+  padding: 2% 20% 5% 20%;
+}
+
+.luoghi, .legenda {
+  padding: 2% 20% 2% 20%;
+  background-color: #FFFCF3;
+}
+
+.mappa {
+  background-color: #FFFCF3;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.colonna {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* one column */
+.column {
+  float: left;
+  padding: 5%;
+  width: 100%;
+}
+
+/* two columns */
+/* left column */
+.leftcolumn {
+  float: left;
+  padding: 15px;
+  width: 20%;
+}
+
+/* right column */
+.rightcolumn {
+  float: left;
+  padding: 15px;
+  width: 80%;
+}
+
+/* equal columns */
+.equalcolumn {
+  float: left;
+  padding: 12px;
+  width: 33.33%;
+}
+
+/* responsive column */
+@media screen and (max-width: 600px) {
+  /* columns */
+  .column,
+  .leftcolumn,
+  .rightcolumn,
+  .equalcolumn {
+    width: 100%;
+  }
+}
+
+/* tabs */
+/* Stili delle schede */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: background-color 0.3s; /* Aggiunta di una transizione per il cambio di colore di sfondo */
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Stili dei contenuti delle schede */
+.tabcontent {
+  display: none;
+  padding: 20px; /* Aggiunta di un padding maggiore per separare il contenuto dal bordo */
+  border: 1px solid #ccc;
+  border-top: none; /* Rimozione del bordo superiore per separare visivamente i contenuti dalle schede */
+}
+
+.img-catalogo {
+   float: right;
+}
+
+.metadati {
+  text-align: left;
+}
+
+.card .img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.card .vitale {
+  background-image: url("../img/fototessera.jpg");
+}
+
+.card .ignazio {
+  background-image: url("../img/ignazio-laconi.jpg");
+}
+
+.card .farci {
+  background-image: url("../img/farci.jpg");
+}
+
+.card .aymerich {
+  background-image: url("../img/aymerich.png");
+}
+
+.card .placeholder {
+  background-image: url("../img/placeholder.jpg");
+}
+
+.card .ignazio-zero {
+  background-image: url("../img/ignazio/ignaziu-zero.jpg");
+}
+
+.card .ignazio-uno {
+  background-image: url("../img/ignazio/ignaziu-1.jpg");
+}
+
+.card .ignazio-due {
+  background-image: url("../img/ignazio/ignaziu-2.jpg");
+}
+
+.card .ignazio-tre {
+  background-image: url("../img/ignazio/ignaziu-3.jpg");
+}
+
+.card .ignazio-quattro {
+  background-image: url("../img/ignazio/ignaziu-4.jpg");
+}
+
+.card .ignazio-cinque {
+  background-image: url("../img/ignazio/ignaziu-5.jpg");
+}
+
+.card .ignazio-sei {
+  background-image: url("../img/ignazio/ignaziu-6.jpg");
+}
+
+.card .ignazio-sette {
+  background-image: url("../img/ignazio/ignaziu-7.jpg");
+}
+
+.card .ignazio-otto {
+  background-image: url("../img/ignazio/ignaziu-8.jpg");
+}
+
+.card .ignazio-nove {
+  background-image: url("../img/ignazio/ignaziu-9.jpg");
+}
+
+.card .esistenzia-zero {
+  background-image: url("../img/esistenzia/esistenzia.jpg");
+}
+
+.card .esistenzia-uno {
+  background-image: url("../img/esistenzia/esistenzia-1.jpg");
+}
+
+.card .esistenzia-due {
+  background-image: url("../img/esistenzia/esistenzia-2.jpg");
+}
+
+.card .esistenzia-tre {
+  background-image: url("../img/esistenzia/esistenzia-3.jpg");
+}
+
+.card .esistenzia-quattro {
+  background-image: url("../img/esistenzia/esistenzia-4.jpg");
+}
+.card .esistenzia-cinque {
+  background-image: url("../img/esistenzia/esistenzia-5.jpg");
+}
+
+.card .esistenzia-sei {
+  background-image: url("../img/esistenzia/esistenzia-6.jpg");
+}
+
+.card .esistenzia-sette {
+  background-image: url("../img/esistenzia/esistenzia-7.jpg");
+}
+
+.card .esistenzia-otto {
+  background-image: url("../img/esistenzia/esistenzia-8.jpg");
+}
+
+.card .esistenzia-nove {
+  background-image: url("../img/esistenzia/esistenzia-9.jpg");
+}
+
+.card .fueddus-zero {
+  background-image: url("../img/fueddus/fueddus.jpg");
+}
+
+.card .fueddus-uno {
+  background-image: url("../img/fueddus/fueddus-1.jpg");
+}
+
+.card .fueddus-due {
+  background-image: url("../img/fueddus/fueddus-2.jpg");
+}
+
+.card .fueddus-tre {
+  background-image: url("../img/fueddus/fueddus-3.jpg");
+}
+
+.card .fueddus-quattro {
+  background-image: url("../img/fueddus/fueddus-4.jpg");
+}
+
+.card .fueddus-cinque {
+  background-image: url("../img/fueddus/fueddus-5.jpg");
+}
+
+.card .fueddus-sei {
+  background-image: url("../img/fueddus/fueddus-6.jpg");
+}
+
+.card .fueddus-sette {
+  background-image: url("../img/fueddus/fueddus-7.jpg");
+}
+
+.card .fueddus-otto {
+  background-image: url("../img/fueddus/fueddus-8.jpg");
+}
+
+.card .fueddus-nove {
+  background-image: url("../img/fueddus/fueddus-9.jpg");
+}
+
+.card .sognu-zero {
+  background-image: url("../img/sognu/sognu.jpg");
+}
+
+.card .sognu-unodue {
+  background-image: url("../img/sognu/sognu-1-2.jpg");
+}
+
+.card .sognu-tre {
+  background-image: url("../img/sognu/sognu-3.jpg");
+}
+
+.card .sognu-quattro {
+  background-image: url("../img/sognu/sognu-4.jpg");
+}
+
+.card .sognu-cinque {
+  background-image: url("../img/sognu/sognu-5.jpg");
+}
+
+.card .sognu-sei {
+  background-image: url("../img/sognu/sognu-6.jpg");
+}
+
+.card .sognu-sette {
+  background-image: url("../img/sognu/sognu-7.jpg");
+}
+
+.card .sognu-otto {
+  background-image: url("../img/sognu/sognu-8.jpg");
+}
+
+.card .sognu-nove {
+  background-image: url("../img/sognu/sognu-9.jpg");
+}
+
+.card .sognu-dieci {
+  background-image: url("../img/sognu/sognu-10.jpg");
+}
+
+.card .canti-zero {
+  background-image: url("../img/canti/canti.jpg");
+}
+
+.card .notexena {
+  background-image: url("../img/canti/notexena.jpg");
+}
+
+.card .vanagloria {
+  background-image: url("../img/canti/vanagloria.jpg");
+}
+
+.card .solitudini {
+  background-image: url("../img/canti/solitudini.jpg");
+}
+
+.card .buon-natale {
+  background-image: url("../img/canti/buonnatale.jpg");
+}
+
+.card .natale {
+  background-image: url("../img/canti/natale.jpg");
+}
+
+.card .auguriu {
+  background-image: url("../img/canti/auguriu.jpg");
+}
+
+.card .muttettu {
+  background-image: url("../img/canti/muttettu.jpg");
+}
+
+.card .libertadi-zero {
+  background-image: url("../img/libertadi/libertadi.jpg");
+}
+
+.card .libertadi-uno {
+  background-image: url("../img/libertadi/libertadi-1.jpg");
+}
+
+.card .libertadi-due {
+  background-image: url("../img/libertadi/libertadi-2.jpg");
+}
+
+.card .libertadi-tre {
+  background-image: url("../img/libertadi/libertadi-3.jpg");
+}
+
+.card .libertadi-quattro {
+  background-image: url("../img/libertadi/libertadi-4.jpg");
+}
+
+.card .libertadi-cinque {
+  background-image: url("../img/libertadi/libertadi-5.jpg");
+}
+
+.card .libertadi-sei {
+  background-image: url("../img/libertadi/libertadi-6.jpg");
+}
+
+.card .libertadi-sette {
+  background-image: url("../img/libertadi/libertadi-7.jpg");
+}
+
+.card .libertadi-otto {
+  background-image: url("../img/libertadi/libertadi-8.jpg");
+}
+
+.card .libertadi-nove {
+  background-image: url("../img/libertadi/libertadi-9.jpg");
+}
+
+.card .giardinu-zero {
+  background-image: url("../img/giardinu/giardinu.jpg");
+}
+
+.card .giardinu-uno {
+  background-image: url("../img/giardinu/giardinu-1.jpg");
+}
+
+.card .giardinu-due {
+  background-image: url("../img/giardinu/giardinu-2.jpg");
+}
+
+.card .giardinu-tre {
+  background-image: url("../img/giardinu/giardinu-3.jpg");
+}
+
+.card .giardinu-quattro {
+  background-image: url("../img/giardinu/giardinu-4.jpg");
+}
+
+.card .giardinu-cinque {
+  background-image: url("../img/giardinu/giardinu-5.jpg");
+}
+
+.card .giardinu-sei {
+  background-image: url("../img/giardinu/giardinu-6.jpg");
+}
+
+.card .giardinu-sette {
+  background-image: url("../img/giardinu/giardinu-7.jpg");
+}
+
+.card .giardinu-otto {
+  background-image: url("../img/giardinu/giardinu-8.jpg");
+}
+
+.card .giardinu-nove {
+  background-image: url("../img/giardinu/giardinu-9.jpg");
+}
+
+/* pagination */
+.pagination {
+  font-size: 13px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: #409041;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+form.example {
+  margin: auto;
+  max-width: 300px;
+}
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: inherit;
+  padding: 10px;
+  color: white;
+  font-size: 12px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #30434f;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img-item {
+  width: 70%;
+  height: auto;
+  float: center;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 17px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}

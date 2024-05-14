@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+	<!-- head e body sono i due marcatori che dipendono da html -->
+	<head>
+		<title>Su Meurreddinu</title>
+		<!-- charset è per settare unicode -->
+		<meta charset="UTF-8" />
+		<meta name="description" content="Sito dedicato Vitale Murgia" />
+		<meta name="keywords" content="manoscritto, Sardegna, strumenti di navigazione" />
+		<meta name="author" content="Lorenzo Zucca" />
+		<!-- viewport è per la visualizzazione su device diversi -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="stile/stile.css" />
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+		<meta name="DC.Title" content="Su Meureddinu">
+		<meta name="DC.Creator" content="Zucca, Lorenzo">
+		<meta name="DC.Subject" content="Manoscritto">
+		<meta name="DC.Subject" content="Periodi">
+		<meta name="DC.Description" content="Raccolta di manoscritti di Vitale Murgia">
+		<meta name="DC.Publisher" content="Università di Bologna">
+		<meta name="DC.Date" content="2024">
+		<meta name="DC.Type" content="Text">
+		<meta name="DC.Format" content="HTML">
+		<meta name="DC.Identifier" content="tbd">
+		<meta name="DC.Source" content="Sito web già esistente da replicare">
+		<meta name="DC.Language" content="ita">
+		<meta name="DC.Coverage" content="Bologna">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- abbiamo sette diverse div -->
+		<header>
+			<div id="top" class="lingua">
+				<a href="#">ENG</a>
+				<a href="index-srd.html">SRD</a>
+				<a href="#" class="corrent">ITA</a>
+			</div>
+			<div class="header">
+				<img src="img/firma.png" alt="Frontespizio del manoscritto" />
+			</div>
+		</header>
+		<nav>
+			<div id="navbar">
+				<a href="index.html">Home</a>
+				<a href="intro.html">Introduzione</a>
+				<a href="#" class="corrente"><strong>Catalogo</strong></a>
+				<a href="#">Persone</a>
+				<a href="maps.html">Luoghi</a>
+				
+			</div>
+		</nav>
+		<div class="row">
+			<!-- left column -->
+			<div class="leftcolumn">
+				<!-- breadcrumbs -->
+				<div>
+					<ul class="breadcrumb">
+						<li><a href="index.html" title="Vai alla home">Home</a></li>
+						<li>Catalogo</li>
+					</ul>
+				</div>
+				<form class="example" action="/action_page.php">
+					<input type="text" placeholder="Cerca nel catalogo..." name="search2" />
+					<button class="fa fa-search">&#128269;</button>
+				</form>
+				<!-- filters -->
+				<div>
+					<h3>Filtra per</h3>
+					<p align="center"><a href="#"><button class="button">Anno</button></a></p>
+					<p align="center"><a href="#"><button class="button">Persone</button></a></p>
+					<p align="center"><a href="#"><button class="button">Luoghi</button></a></p>
+				</div>
+			</div>
+			<!-- right column -->
+			<div class="rightcolumn">
+				<h2>Catalogo</h2>
+				<!-- tabs -->
+				<!-- tab links -->
+				<div class="tab">
+					<button class="tablinks" id="aprisubito" onclick="openCity(event, 'ignazio')">Ignazio da Laconi</button>
+					<button class="tablinks" onclick="openCity(event, 'esistenzia')"><i>S'esistenzia de Deus</i></button>
+					<button class="tablinks" onclick="openCity(event, 'fueddus')"><i>Fueddus de unu morenti</i></button>
+					<button class="tablinks" onclick="openCity(event, 'sognu')"><i>Unu Sognu</i></button>
+					<button class="tablinks" onclick="openCity(event, 'canti')">Canti vari</button>
+					<button class="tablinks" onclick="openCity(event, 'libertadi')"><i>Sa libertadi</i></button>
+					<button class="tablinks" onclick="openCity(event, 'giardinu')"><i>Su giardinu miu</i></button>
+				</div>
+				<!-- tab content -->
+				<!-- giovinezza -->
+				<div id="ignazio" class="tabcontent">
+		        	<div class="row">
+		        		<div class="equalcolumn">
+		        			<h2><span class="dc.title"></span>Vita morte e miracoli<br>Ignazio da Laconi</h2>
+							<p><b><span class="dc.creator">Autore:</span></b> Vitale Murgia</p>
+							<p><b><span class="dc.subject">Soggetto:</span></b> Ignazio da Laconi</p>
+							<p><b><span class="dc.date">Anno:</span></b> 1954</p>
+							<p><b><span class="dc.extent">Consistenza:</span></b> 119 stanze; 113 pagine</p>
+							<p><b><span class="dc.description">Descrizione:</span></b> agiografia del frate sardo sant’Ignazio da Laconi, che costituisce il prodotto più consistente trascritto nell’agenda; ripercorre l’intera vita del santo sardo proponendo, oltre ai fatti puramente biografici, anche alcuni racconti di stampo agiografico e miracolistico.</p>
+							<a href="xml/xml-valido-dc.xml" target="_blank"><button class="button">Scarica il file XML/DC</button></a>
+						</div>
+						<div class="equalcolumn"></div>
+						<div class="equalcolumn">
+							<img src="img/ignazio/ignaziu-zero.jpg" alt="Vita morte e miracoli - Ignazio da Laconi" style="height:400px" class="img-catalogo">
+						</div>
+					</div>
+					<button class="accordion">Esplora le pagine &#11015;</button>
+					<div class="panel">
+						<div class="row">
+							<div class="equalcolumn">
+								<a href="item.html" class="btn-default" title="n. 1"><div class="card">
+									<div class="img ignazio-uno"></div>
+			                		<div class="container">
+			                  			<h3><b>n. 1</b></h3>
+			                  			<p><b>Pagina:</b> 1 gennaio</p>
+			                 		</div></a>
+			              		</div>
+			            	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 2"><div class="card">
+									<div class="img ignazio-due"></div>
+			                		<div class="container">
+			                  			<h3><b>n. 2</b></h3>
+			                  			<p><b>Pagina:</b> 2 gennaio</p>
+			                		</div>
+			              		</div></a>
+			            	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 3"><div class="card">
+									<div class="img ignazio-tre"></div>
+			                		<div class="container">
+			                  			<h3><b>n. 3</b></h3>
+			                  			<p><b>Pagina:</b> 3 gennaio</p>
+			                		</div>
+			              		</div></a>
+			            	</div>
+			          	</div>
+			         	<div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 4"><div class="card">
+									<div class="img ignazio-quattro"></div>
+				            		<div class="container">
+				              			<h3><b>n. 4</b></h3>
+				              			<p><b>Pagina:</b> 4 gennaio</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 5"><div class="card">
+									<div class="img ignazio-cinque"></div>
+				            		<div class="container">
+				              			<h3><b>n. 5</b></h3>
+				              			<p><b>Pagina: </b>5 gennaio</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 6"><div class="card">
+									<div class="img ignazio-sei"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 6</b></h3>
+				                  		<p><b>Pagina:</b> 6 gennaio</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 7"><div class="card">
+									<div class="img ignazio-sette"></div>
+				            		<div class="container">
+				              			<h3><b>n. 7</b></h3>
+				              			<p><b>Pagina:</b> 7 gennaio</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 8"><div class="card">
+									<div class="img ignazio-otto"></div>
+				            		<div class="container">
+				              			<h3><b>n. 8</b></h3>
+				              			<p><b>Pagina: </b>8 gennaio</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 9"><div class="card">
+									<div class="img ignazio-nove"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 9</b></h3>
+				                  		<p><b>Pagina:</b> 9 gennaio</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <!-- pagination -->
+			            <div class="pagination">
+			            	<a href="#" title="Prev">&laquo;</a>
+			            	<a href="#" class="active" title="1">1</a>
+			            	<a href="#" title="2">2</a>
+			            	<a href="#" title="3">3</a>
+			            	<a href="#" title="4">4</a>
+			            	<a href="#" title="5">5</a>
+			            	<a href="#" title="6">6</a>
+			            	<a href="#" title="7">...</a>
+			            	<a href="#" title="14">14</a>
+			            	<a href="#" title="Next">&raquo;</a>
+			            </div>
+		        	</div>
+		        </div>
+		        <!-- periodo blu -->
+		        <div id="esistenzia" class="tabcontent">
+		        	<div class="row">
+			          	<div class="equalcolumn">
+			          		<h2>Conversazione poetica fra amici. 1° tema:<br><i>S'esistenzia de Deus</i><br><small>("L'esistenza di Dio")</small></h2>
+			          		<p><b>Autori:</b> Vitale Murgia, Antonio Bachisio Denti</p>
+							<p><b>Anno:</b> 1954-1955</p>
+							<p><b>Consistenza:</b> 14 componimenti; 102 pagine</p>
+							<p><b>Descrizione:</b> scambi poetici <i>a taulinu</i> tra Murgia e Denti sul tema dell'esistenza di Dio. Denti difende la posizione ateo-scettica, Murgia la posizione cristiano-cattolica.</p>
+							<a href="#" target="_blank"><button class="button">Scarica il file XML/DC</button></a>
+						</div>
+						<div class="equalcolumn"></div>
+						<div class="equalcolumn">
+							<img src="img/esistenzia/esistenzia.jpg" alt="S'esistenzia de Deus" style="height:400px" class="img-catalogo">
+						</div>
+					</div>
+					<button class="accordion">Esplora le pagine &#11015;</button>
+						<div class="panel">
+						<div class="row">
+				            <div class="equalcolumn">
+								<a href="item2.html" class="btn-default" title="Bachis Denti de Ottana a G. Tedde"><div class="card">
+									<div class="img esistenzia-uno"></div>
+				            		<div class="container">
+				              			<h3><b>Bachis Denti de Ottana a G. Tedde</b></h3>
+				              			<p><b>Pagine:</b> 22 aprile - fine aprile</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="item3.html" class="btn-default" title="V. Murgia a B. Denti (1)"><div class="card">
+									<div class="img esistenzia-due"></div>
+				            		<div class="container">
+				              			<h3><b>V. Murgia a B. Denti (1)</b></h3>
+				              			<p><b>Pagine: </b>1 maggio - 8 maggio</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="B. Denti a V. Murgia (1)"><div class="card">
+									<div class="img esistenzia-tre"></div>
+				                	<div class="container">
+				                  		<h3><b>B. Denti a V. Murgia (1)</b></h3>
+				                  		<p><b>Pagine:</b> 9 maggio - 17 maggio</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+			            <div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="V. Murgia a B. Denti (2)"><div class="card">
+									<div class="img esistenzia-quattro"></div>
+				            		<div class="container">
+				              			<h3><b>V. Murgia a B. Denti (2)</b></h3>
+				              			<p><b>Pagine:</b> 18 maggio - 26 maggio</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="B. Denti a V. Murgia (2)"><div class="card">
+									<div class="img esistenzia-cinque"></div>
+				            		<div class="container">
+				              			<h3><b>B. Denti a V. Murgia (2)</b></h3>
+				              			<p><b>Pagine:</b> 27 maggio - 2 giugno</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="V. Murgia a B. Denti (3)"><div class="card">
+									<div class="img esistenzia-sei"></div>
+				                	<div class="container">
+				                  		<h3><b>V. Murgia a B. Denti (3)</b></h3>
+				                  		<p><b>Pagine:</b> 3 giugno - 11 giugno</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+						</div>
+						<div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="B. Denti a V. Murgia (3)"><div class="card">
+									<div class="img esistenzia-sette"></div>
+				            		<div class="container">
+				              			<h3><b>B. Denti a V. Murgia (3)</b></h3>
+				              			<p><b>Pagine:</b> 12 giugno - 18 giugno</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="V. Murgia a B. Denti (4)"><div class="card">
+									<div class="img esistenzia-otto"></div>
+				            		<div class="container">
+				              			<h3><b>V. Murgia a B. Denti (4)</b></h3>
+				              			<p><b>Pagine:</b> 19 giugno - fine giugno</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="B. Denti a V. Murgia (4)"><div class="card">
+									<div class="img esistenzia-nove"></div>
+				                	<div class="container">
+				                  		<h3><b>B. Denti a V. Murgia (4)</b></h3>
+				                  		<p><b>Pagine:</b> fine giugno - 4 luglio</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+						</div>
+						<!-- pagination -->
+						<div>
+							<div class="pagination">
+								<a href="#" title="Prev">&laquo;</a>
+								<a href="#" class="active" title="1">1</a>
+								<a href="#" title="2">2</a>
+								<a href="#" title="3">3</a>
+								<a href="#" title="4">4</a>
+								<a href="#" title="5">5</a>
+								<a href="#" title="6">6</a>
+								<a href="#" title="Next">&raquo;</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		        <div id="fueddus" class="tabcontent">
+		        	<div class="row">
+			          	<div class="equalcolumn">
+			          		<h2><i>Fueddus de unu morenti</i><br><small>("Parole di un morente")</small></h2>
+			          		<p><b>Autore:</b> Vitale Murgia</p>
+							<p><b>Anno:</b> 1951</p>
+							<p><b>Consistenza:</b> 11 pagine</p>
+							<p><b>Descrizione:</b> l’autore evoca le ultime parole e volontà di un uomo morente che si rivolge alla moglie.</p>
+							<a href="#" target="_blank"><button class="button">Scarica il file XML/DC</button></a>
+						</div>
+						<div class="equalcolumn"></div>
+						<div class="equalcolumn">
+							<img src="img/fueddus/fueddus.jpg" alt="Fueddus de unu morenti" style="height:400px" class="img-catalogo">
+						</div>
+					</div>
+					<button class="accordion">Esplora le pagine &#11015;</button>
+					<div class="panel">
+						<div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 1"><div class="card">
+									<div class="img fueddus-uno"></div>
+				            		<div class="container">
+				              			<h3><b>n. 1</b></h3>
+				              			<p><b>Pagina:</b> 20 agosto</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 2"><div class="card">
+									<div class="img fueddus-due"></div>
+				            		<div class="container">
+				              			<h3><b>n. 2</b></h3>
+				              			<p><b>Pagina:</b> 21 agosto</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 3"><div class="card">
+									<div class="img fueddus-tre"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 3</b></h3>
+				                  		<p><b>Pagina:</b> 22 agosto</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 4"><div class="card">
+									<div class="img fueddus-quattro"></div>
+				            		<div class="container">
+				              			<h3><b>n. 4</b></h3>
+				              			<p><b>Pagina:</b> 23 agosto</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 5"><div class="card">
+									<div class="img fueddus-cinque"></div>
+				            		<div class="container">
+				              			<h3><b>n. 5</b></h3>
+				              			<p><b>Pagina:</b> 24 agosto</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 6"><div class="card">
+									<div class="img fueddus-sei"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 6</b></h3>
+				                  		<p><b>Pagina:</b> 25 agosto</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 7"><div class="card">
+									<div class="img fueddus-sette"></div>
+				            		<div class="container">
+				              			<h3><b>n. 7</b></h3>
+				              			<p><b>Pagina:</b> 26 agosto</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 8"><div class="card">
+									<div class="img fueddus-otto"></div>
+				            		<div class="container">
+				              			<h3><b>n. 8</b></h3>
+				              			<p><b>Pagina:</b> 27 agosto</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 9"><div class="card">
+									<div class="img fueddus-nove"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 9</b></h3>
+				                  		<p><b>Pagina:</b> 28 agosto</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div>
+							<div class="pagination">
+								<a href="#" title="Prev">&laquo;</a>
+								<a href="#" class="active" title="1">1</a>
+								<a href="#" title="2">2</a>
+								<a href="#" title="Next">&raquo;</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="sognu" class="tabcontent">
+		        	<div class="row">
+			          	<div class="equalcolumn">
+			          		<h2><i>Unu Sognu</i><br><small>("Un Sogno")</small></h2>
+			          		<p><b>Autore:</b> Vitale Murgia</p>
+							<p><b>Anno:</b> 1951</p>
+							<p><b>Consistenza:</b> 37 pagine</p>
+							<p><b>Descrizione:</b> l’autore immagina di poter visitare in sogno come un novello Dante, assistito dalla guida della celebre Grazia Deledda, una sorta di santuario dove riposano alcune delle personalità più influenti della scena poetica e letteraria sarda assieme agli esponenti a quel tempo già defunti della scena estemporanea campidanese.</p>
+							<a href="#" target="_blank"><button class="button">Scarica il file XML/DC</button></a>
+						</div>
+						<div class="equalcolumn"></div>
+						<div class="equalcolumn">
+							<img src="img/sognu/sognu.jpg" alt="Unu Sognu" style="height:400px" class="img-catalogo">
+						</div>
+					</div>
+					<button class="accordion">Esplora le pagine &#11015;</button>
+					<div class="panel">
+						<div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="nn. 1-2"><div class="card">
+									<div class="img sognu-unodue"></div>
+				            		<div class="container">
+				              			<h3><b>nn. 1-2</b></h3>
+				              			<p><b>Pagina:</b> fine agosto</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 3"><div class="card">
+									<div class="img sognu-tre"></div>
+				            		<div class="container">
+				              			<h3><b>n. 3</b></h3>
+				              			<p><b>Pagina:</b> 1 settembre</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 4"><div class="card">
+									<div class="img sognu-quattro"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 4</b></h3>
+				                  		<p><b>Pagina:</b> 2 settembre</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 5"><div class="card">
+									<div class="img sognu-cinque"></div>
+				            		<div class="container">
+				              			<h3><b>n. 5</b></h3>
+				              			<p><b>Pagina:</b> 3 settembre</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 6"><div class="card">
+									<div class="img sognu-sei"></div>
+				            		<div class="container">
+				              			<h3><b>n. 6</b></h3>
+				              			<p><b>Pagina:</b> 4 settembre</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 7"><div class="card">
+									<div class="img sognu-sette"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 7</b></h3>
+				                  		<p><b>Pagina:</b> 5 settembre</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 8"><div class="card">
+									<div class="img sognu-otto"></div>
+				            		<div class="container">
+				              			<h3><b>n. 8</b></h3>
+				              			<p><b>Pagina:</b> 6 settembre</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 9"><div class="card">
+									<div class="img sognu-nove"></div>
+				            		<div class="container">
+				              			<h3><b>n. 9</b></h3>
+				              			<p><b>Pagina:</b> 7 settembre</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 10"><div class="card">
+									<div class="img sognu-dieci"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 10</b></h3>
+				                  		<p><b>Pagina:</b> 8 settembre</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div>
+							<div class="pagination">
+								<a href="#" title="Prev">&laquo;</a>
+								<a href="#" class="active" title="1">1</a>
+								<a href="#" title="2">2</a>
+								<a href="#" title="3">3</a>
+								<a href="#" title="4">4</a>
+								<a href="#" title="5">5</a>
+								<a href="#" title="Next">&raquo;</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="canti" class="tabcontent">
+		        	<div class="row">
+			          	<div class="equalcolumn">
+			          		<h2>Canti vari</h2>
+			          		<p><b>Autore:</b> Vitale Murgia</p>
+							<p><b>Anno:</b> 1953-1954</p>
+							<p><b>Consistenza:</b> 7 componimenti; 25 pagine</p>
+							<p><b>Descrizione:</b> miscellanea di vari componimenti di varia natura, dalle sestine a varie tipologie poetiche come il <i>mutetu</i> indirizzati a svariati amici dell'autore.</p>
+							<a href="#" target="_blank"><button class="button">Scarica il file XML/DC</button></a>
+						</div>
+						<div class="equalcolumn"></div>
+						<div class="equalcolumn">
+							<img src="img/canti/canti.jpg" alt="Prima pagina" style="height:400px" class="img-catalogo">
+						</div>
+					</div>
+					<button class="accordion">Esplora le pagine &#11015;</button>
+					<div class="panel">
+						<div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="Sa nott'e xèna"><div class="card">
+									<div class="img notexena"></div>
+				            		<div class="container">
+				              			<h3><b><i>Sa nott'e xèna</i></b></h3>
+				              			<p><b>Pagine:</b> 7 ottobre - 12 ottobre</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="Vanagloria"><div class="card">
+									<div class="img vanagloria"></div>
+				            		<div class="container">
+				              			<h3><b>Vanagloria</b></h3>
+				              			<p><b>Pagine:</b> 13 ottobre - 14 ottobre</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="Solitudini"><div class="card">
+									<div class="img solitudini"></div>
+				                	<div class="container">
+				                  		<h3><b><i>Solitudini</i></b></h3>
+				                  		<p><b>Pagine:</b> 15 ottobre - 20 ottobre</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="Buon Natale"><div class="card">
+									<div class="img buon-natale"></div>
+				            		<div class="container">
+				              			<h3><b>Buon Natale</b></h3>
+				              			<p><b>Pagine:</b> 21 ottobre - 22 ottobre</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="Natale"><div class="card">
+									<div class="img natale"></div>
+				            		<div class="container">
+				              			<h3><b>Natale</b></h3>
+				              			<p><b>Pagine:</b> 23 ottobre - 28 ottobre</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="Auguriu"><div class="card">
+									<div class="img auguriu"></div>
+				                	<div class="container">
+				                  		<h3><b><i>Auguriu</i></b></h3>
+				                  		<p><b>Pagine:</b> 29 ottobre - 30 ottobre</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="Muttettu"><div class="card">
+									<div class="img muttettu"></div>
+				            		<div class="container">
+				              			<h3><b><i>Muttettu</i></b></h3>
+				              			<p><b>Pagina:</b> 31 ottobre</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn"></div>
+				            <div class="equalcolumn"></div>
+				        </div>
+				    </div>
+				</div>
+				<div id="libertadi" class="tabcontent">
+		        	<div class="row">
+			          	<div class="equalcolumn">
+			          		<h2>2° tema: <i>Sa libertadi</i><br><small>("La libertà")</small></h2>
+			          		<p><b>Autore:</b> Vitale Murgia</p>
+							<p><b>Anno:</b> 1955</p>
+							<p><b>Consistenza:</b> 10 pagine</p>
+							<p><b>Descrizione:</b> il secondo tema della già introdotta conversazione poetica intrapresa con Bachisio Denti, ma si dispone soltanto delle dieci sestine di Murgia datate 1955 che danno avvio alla conversazione; nelle righe si trova l’esplicita citazione al primo tema, accanto al desiderio dell’autore di fare visita a Denti.</p>
+							<a href="#" target="_blank"><button class="button">Scarica il file XML/DC</button></a>
+						</div>
+						<div class="equalcolumn"></div>
+						<div class="equalcolumn">
+							<img src="img/libertadi/libertadi.jpg" alt="Prima pagina" style="height:400px" class="img-catalogo">
+						</div>
+					</div>
+					<button class="accordion">Esplora le pagine &#11015;</button>
+					<div class="panel">
+						<div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 1"><div class="card">
+									<div class="img libertadi-uno"></div>
+				            		<div class="container">
+				              			<h3><b>n. 1</b></h3>
+				              			<p><b>Pagina:</b> 1 novembre</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 2"><div class="card">
+									<div class="img libertadi-due"></div>
+				            		<div class="container">
+				              			<h3><b>n. 2</b></h3>
+				              			<p><b>Pagine:</b> 2 novembre</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 3"><div class="card">
+									<div class="img libertadi-tre"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 3</b></h3>
+				                  		<p><b>Pagine:</b> 3 novembre</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 4"><div class="card">
+									<div class="img libertadi-quattro"></div>
+				            		<div class="container">
+				              			<h3><b>n. 4</b></h3>
+				              			<p><b>Pagina:</b> 4 novembre</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 5"><div class="card">
+									<div class="img libertadi-cinque"></div>
+				            		<div class="container">
+				              			<h3><b>n. 5</b></h3>
+				              			<p><b>Pagine:</b> 5 novembre</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 6"><div class="card">
+									<div class="img libertadi-sei"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 6</b></h3>
+				                  		<p><b>Pagine:</b> 6 novembre</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 7"><div class="card">
+									<div class="img libertadi-sette"></div>
+				            		<div class="container">
+				              			<h3><b>n. 7</b></h3>
+				              			<p><b>Pagina:</b> 7 novembre</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 8"><div class="card">
+									<div class="img libertadi-otto"></div>
+				            		<div class="container">
+				              			<h3><b>n. 8</b></h3>
+				              			<p><b>Pagine:</b> 8 novembre</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 9"><div class="card">
+									<div class="img libertadi-nove"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 9</b></h3>
+				                  		<p><b>Pagine:</b> 9 novembre</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div>
+							<div class="pagination">
+								<a href="#" title="Prev">&laquo;</a>
+								<a href="#" class="active" title="1">1</a>
+								<a href="#" title="2">2</a>
+								<a href="#" title="Next">&raquo;</a>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div id="giardinu" class="tabcontent">
+		        	<div class="row">
+			          	<div class="equalcolumn">
+			          		<h2><i>Su giardinu miu</i><br><small>("Il mio giardino")</small></h2>
+			          		<p><b>Autore:</b> Vitale Murgia</p>
+							<p><b>Anno:</b> 1954</p>
+							<p><b>Consistenza:</b> 10 pagine</p>
+							<p><b>Descrizione:</b> componimento allegorico e autobiografico in cui vengono descritti, come fiori in un florido giardino, sette dei figli dell’autore che soddisfatto si bea della visione della sua progenie dopo averne faticosamente curato la crescita.</p>
+							<a href="#" target="_blank"><button class="button">Scarica il file XML/DC</button></a>
+						</div>
+						<div class="equalcolumn"></div>
+						<div class="equalcolumn">
+							<img src="img/giardinu/giardinu.jpg" alt="Prima pagina" style="height:400px" class="img-catalogo">
+						</div>
+					</div>
+					<button class="accordion">Esplora le pagine &#11015;</button>
+					<div class="panel">
+						<div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 1"><div class="card">
+									<div class="img giardinu-uno"></div>
+				            		<div class="container">
+				              			<h3><b>n. 1</b></h3>
+				              			<p><b>Pagina:</b> 12 novembre</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 2"><div class="card">
+									<div class="img giardinu-due"></div>
+				            		<div class="container">
+				              			<h3><b>n. 2</b></h3>
+				              			<p><b>Pagine:</b> 13 novembre</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 3"><div class="card">
+									<div class="img giardinu-tre"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 3</b></h3>
+				                  		<p><b>Pagine:</b> 14 novembre</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 4"><div class="card">
+									<div class="img giardinu-quattro"></div>
+				            		<div class="container">
+				              			<h3><b>n. 4</b></h3>
+				              			<p><b>Pagina:</b> 15 novembre</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 5"><div class="card">
+									<div class="img giardinu-cinque"></div>
+				            		<div class="container">
+				              			<h3><b>n. 5</b></h3>
+				              			<p><b>Pagine:</b> 16 novembre</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 6"><div class="card">
+									<div class="img giardinu-sei"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 6</b></h3>
+				                  		<p><b>Pagine:</b> 17 novembre</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 7"><div class="card">
+									<div class="img giardinu-sette"></div>
+				            		<div class="container">
+				              			<h3><b>n. 7</b></h3>
+				              			<p><b>Pagina:</b> 18 novembre</p>
+				            		</div>
+				          		</div></a>
+				        	</div>
+			            	<div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 8"><div class="card">
+									<div class="img giardinu-otto"></div>
+				            		<div class="container">
+				              			<h3><b>n. 8</b></h3>
+				              			<p><b>Pagine:</b> 19 novembre</p>
+				            		</div>
+				          		</div></a>
+			            	</div>
+				            <div class="equalcolumn">
+								<a href="#" class="btn-default" title="n. 9"><div class="card">
+									<div class="img giardinu-nove"></div>
+				                	<div class="container">
+				                  		<h3><b>n. 9</b></h3>
+				                  		<p><b>Pagine:</b> 20 novembre</p>
+				                	</div>
+				              	</div></a>
+				            </div>
+				        </div>
+				         <div>
+							<div class="pagination">
+								<a href="#" title="Prev">&laquo;</a>
+								<a href="#" class="active" title="1">1</a>
+								<a href="#" title="2">2</a>
+								<a href="#" title="Next">&raquo;</a>
+							</div>
+						</div>
+					</div>
+			    </div>
+			</div>
+		</div>
+        <section>
+			<div class="pre-footer" align="center"><a href="#"><p>Credits</a> | <a href="#">Licenze</a> | <a href="item.html">Ultimo item inserito</a>
+			</div>
+		</section>
+		<footer class="footer">
+			<a href="#top"><img src="img/freccia.png" title="Torna su" position:center></a>
+			<p align="center">&copy;Lorenzo Zucca 2024 - Corso di Digital humanities e Patrimonio culturale &#128239;</p>
+		</footer>
+		<script src="script/script.js"></script>
+	</body>
+</html>
+

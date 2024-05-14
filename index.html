@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<!-- head e body sono i due marcatori che dipendono da html -->
+	<head>
+		<title>Su Meurreddinu</title>
+		<!-- charset è per settare unicode -->
+		<meta charset="UTF-8" />
+		<meta name="description" content="Sito dedicato Vitale Murgia" />
+		<meta name="keywords" content="manoscritto, Sardegna, strumenti di navigazione" />
+		<meta name="author" content="Lorenzo Zucca" />
+		<!-- viewport è per la visualizzazione su device diversi -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="stile/stile.css" />
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+		<meta name="DC.Title" content="Su Meureddinu">
+		<meta name="DC.Creator" content="Zucca, Lorenzo">
+		<meta name="DC.Subject" content="Manoscritto">
+		<meta name="DC.Subject" content="Periodi">
+		<meta name="DC.Description" content="Raccolta di manoscritti di Vitale Murgia">
+		<meta name="DC.Publisher" content="Università di Bologna">
+		<meta name="DC.Date" content="2024">
+		<meta name="DC.Type" content="Text">
+		<meta name="DC.Format" content="HTML">
+		<meta name="DC.Identifier" content="tbd">
+		<meta name="DC.Source" content="Sito web già esistente da replicare">
+		<meta name="DC.Language" content="ita">
+		<meta name="DC.Coverage" content="Bologna">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- abbiamo sette diverse div -->
+		<header>
+			<div id="top" class="lingua">
+				<a href="#">ENG</a>
+				<a href="index-srd.html">SRD</a>
+				<a href="#" class="corrent">ITA</a>
+			</div>
+			<div class="header">
+				<img src="img/firma.png" alt="Frontespizio del manoscritto" />
+			</div>
+		</header>
+		<nav>
+			<div id="navbar">
+				<a href="#" class="corrente"><b>Home</b></a>
+				<a href="intro.html">Introduzione</a>
+				<a href="catalogo.html">Catalogo</a>
+				<a href="#">Persone</a>
+				<a href="maps.html">Luoghi</a>
+			</div>
+		</nav>
+		<section>
+			<div class="intro">
+				<div class="testo-intro">
+					<h1>"<i>Su Meurreddinu</i>"</h1>
+					<hr>
+					<h3>Un manoscritto inedito e il suo autore</h3>
+					<a href="#progetto"><button class="button">Scopri di più</button></a>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div id="progetto" class="progetto">
+				<h2>Il Progetto</h2>
+				<hr>
+				<div class="grid-container">	
+					<div class="grid-item">
+					<p>"Su Meurreddinu" è un progetto di digitalizzazione di un manoscritto del poeta improvvisatore sardo <strong>Vitale Murgia</strong>, nell'ambito del corso di Digital Humanities e Patrimonio culturale dell'Università di Bologna.</p>
+					<p>Gli obiettivi principali del progetto sono la digitalizzazione, la metadatazione, la preservazione e la valorizzazione del manoscritto in questione, per una riscoperta dell'autore e della sua produzione poetica. Il risultato è un catalogo che raccoglie più di un centinaio di pagine navigabili per opera.
+					<p align="center"><a href="intro.html"><button class="button">Approfondimento sull'autore</button></a></p>
+					</div>
+					<div class="grid-item">
+						<img src="img/vitale.jpg" alt="Ritratto di Vitale Murgia">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div id= "manoscritto" class="manoscritto">
+				<h2>Il Manoscritto</h2>
+				<hr>
+				<div class="grid-container">
+					<div class="grid-item">
+						<img src="img/prima.jpg" alt="Copertina del manoscritto">
+					</div>	
+					<div class="grid-item">
+					<p>Il manoscritto in questione, ritrovato nella Biblioteca del Seminario Arcivescovile di Cagliari, consiste in un’agenda per l’anno 1955, nella quale sono stati scritti e trascritti, quasi certamente dallo stesso Vitale Murgia, dei componimenti poetici tutti in lingua sarda, che spaziano dall’àmbito religioso a quello personale, dalla conversazione <i>a taulinu</i> al semplice diletto letterario.</p>
+					<p>L’oggetto appare mediamente consunto dal tempo, e nelle pagine sono presenti macchie e strappi. Le composizioni, che prendono inizio dalla pagina del 1° gennaio, si concludono nella pagina del 21 novembre.
+					<p align="center"><a href="intro.html#manoscritto" title= "Introduzione"><button class="button">Approfondimento sull'opera</button></a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="esplora">
+				<h2 align="center">Esplora il catalogo</h2>
+				<hr>
+				<div class="row">
+					<div class="equalcolumn">
+						<a href="#" class="btn-default" title="Vita morte e miracoli - Ignazio da Laconi"><div class="card">
+							<div class="img ignazio-zero"></div>
+		            		<div class="container">
+		              			<h3><b>Vita morte e miracoli - Ignazio da Laconi</b></h3>
+		             			<p align="center"><button class="button">Metadati</button></p>
+		            		</div>
+		          		</div></a>
+			        </div>
+	            	<div class="equalcolumn">
+						<a href="#" class="btn-default" title="S'esistenzia de Deus"><div class="card">
+							<div class="img esistenzia-zero"></div>
+		            		<div class="container">
+		              			<h3><b>Conversazione poetica "<i>S'esistenzia de Deus</i>"</b></h3>
+		             			<p align="center"><button class="button">Metadati</button></p>
+		            		</div>
+		          		</div></a>
+	            	</div>
+		            <div class="equalcolumn">
+						<a href="#" class="btn-default" title="Fueddus de unu morenti"><div class="card">
+							<div class="img fueddus-zero"></div>
+		                	<div class="container">
+		                  		<h3><b><i>Fueddus de unu <br>morenti</i></b></h3>
+		                 		<p align="center"><button class="button">Metadati</button></p>
+		                	</div>
+		              	</div></a>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="equalcolumn">
+						<a href="#" class="btn-default" title="Unu Sognu"><div class="card">
+							<div class="img sognu-zero"></div>
+		            		<div class="container">
+		              			<h3><b><i>Unu Sognu</i></b></h3>
+		             			<p align="center"><button class="button">Metadati</button></p>
+		            		</div>
+		          		</div>
+		        	</div>
+	            	<div class="equalcolumn">
+						<a href="#" class="btn-default" title="Canti vari"><div class="card">
+							<div class="img canti-zero"></div>
+		            		<div class="container">
+		              			<h3><b>Canti vari</b></h3>
+		             			<p align="center"><button class="button">Metadati</button></p>
+		            		</div>
+		          		</div>
+	            	</div>
+		            <div class="equalcolumn">
+						<a href="#" class="btn-default" title="Sa libertadi"><div class="card">
+							<div class="img libertadi-zero"></div>
+		                	<div class="container">
+		                  		<h3><b><i>Sa libertadi</i></b></h3>
+		                 		<p align="center"><button class="button">Metadati</button></p>
+		                	</div>
+		              	</div>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="equalcolumn">
+						<a href="#" class="btn-default" title="Su giardinu miu"><div class="card">
+							<div class="img giardinu-zero"></div>
+		            		<div class="container">
+		              			<h3><b><i>Su giardinu miu</i></b></h3>
+		             			<p align="center"><button class="button">Metadati</button></p>
+		            		</div>
+		          		</div>
+		        	</div>
+		        </div>
+		        <p align="center"><a href="catalogo.html" title= "Catalogo"><button class="button">Vedi tutto il catalogo</button></a></p>
+			</div>
+		</section>
+		<section>
+			<div class="pre-footer" align="center"><a href="#"><p>Credits</a> | <a href="#">Licenze</a> | <a href="item.html">Ultimo item inserito</a>
+			</div>
+		</section>
+		<footer class="footer">
+			<a href="#top"><img src="img/freccia.png" title="Torna su" position:center></a>
+			<p align="center">&copy;Lorenzo Zucca 2024 - Corso di Digital humanities e Patrimonio culturale &#128239;</p>
+		</footer>
+		<script src="script/script.js"></script>
+	</body>
+</html>
+
